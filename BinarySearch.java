@@ -1,13 +1,8 @@
-
-
-
 public class BinarySearch {
 
     public static void main(String[] args) {
 
-      
-
-        int arr[] = {10, 20, 30, 40, 50, 60, 70};
+        int arr[] = { 10, 20, 30, 40, 50, 60, 70 };
 
         int key = 60;
 
@@ -22,22 +17,18 @@ public class BinarySearch {
             if (arr[mid] == key) {
                 found = mid;
                 break;
-            }
-            else if (arr[mid] < key) {
+            } else if (arr[mid] < key) {
                 low = mid + 1;
-            }
-            else {
+            } else {
                 high = mid - 1;
             }
         }
 
         if (found != -1) {
             System.out.println("Element found at index: " + found);
-        }
-        else {
+        } else {
             System.out.println("Element not found");
         }
 
-        
     }
 }
